@@ -9,28 +9,44 @@
     <copyright>>© Matchenkov M. J., 2021</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <!--  The version string is recorded in the components table -->
-    <version>0.0.2</version>
+    <version>0.0.4</version>
     <!-- The description is optional and defaults to the name -->
     <description>
         Teftele Smart Budget special designed to help people keep their money in order.
     </description>
+
+   <languages>
+        <language tag="en-GB">site/language/en-GB/en-GB.com_teftelebudget.ini</language>
+    </languages>
+
     <namespace path="src/">Teftele\Component\Teftelebudget</namespace>
 
     <files folder="site/">
+        <folder>language</folder>
         <folder>src</folder>
         <folder>tmpl</folder>
     </files>
-    
+
+    <languages>
+        <language tag="en-GB">site/language/en-GB/en-GB.com_teftelebudget.ini</language>
+    </languages>
+
     <administration>
         <!-- The link that will appear in the Admin panel's "Components" menu -->
         <menu link="index.php?option=com_teftelebudget">Teftele Budget!</menu>
         <!-- List of files and folders to copy. Note the 'folder' attribute.
              This is the name of the folder in your component package to copy FROM -->
         <files folder="admin/">
+            <folder>language</folder>
             <folder>services</folder>
             <folder>src</folder>
             <folder>tmpl</folder>
         </files>
     </administration>
+
+    <languages>
+        <language tag="en-GB">admin/language/en-GB/en-GB.com_teftelebudget.ini</language>
+        <language tag="en-GB">admin/language/en-GB/en-GB.com_teftelebudget.sys.ini</language>
+    </languages>
 
 </extension>
