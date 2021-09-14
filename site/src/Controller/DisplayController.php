@@ -23,9 +23,26 @@ class DisplayController extends BaseController {
 
     public function display($cachable = false, $urlparams = array()) {
         $document = Factory::getDocument();
-        $viewName = $this->input->getCmd('view', 'login');
-        $viewFormat = $document->getType();
+        $viewName = $this->input->getCmd('view', 'index');
+        // Load INDEX if value is empty OR parameter is undefined
+        if (!$viewName){
+          $viewName = 'index';
+        } else {
+          if (($viewName == 'index') ||
+          ($viewName == 'accmanager') ||
+          ($viewName == 'accounts') ||
+          ($viewName == 'groupmanager') ||
+          ($viewName == 'reports') ||
+          ($viewName == 'settings') ||
+          ($viewName == 'empty')){
+            $viewName = $this->input->getCmd('view', 'index');
+          } else {
+            $viewName = 'index';
+          };
+        };
 
+        $viewFormat = $document->getType();
+      
         $view = $this->getView($viewName, $viewFormat);
 
         $view->document = $document;

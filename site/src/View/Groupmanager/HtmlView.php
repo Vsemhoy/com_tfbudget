@@ -1,6 +1,6 @@
 <?php
 
-namespace Teftele\Component\Teftelebudget\Site\View\Teftele;
+namespace Teftele\Component\Teftelebudget\Site\View\Groupmanager;
 
 defined('_JEXEC') or die;
 
@@ -19,7 +19,6 @@ use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
  */
 class HtmlView extends BaseHtmlView {
 
-
     /**
      * Display the view
      *
@@ -29,6 +28,7 @@ class HtmlView extends BaseHtmlView {
     public function display($template = null) {
         // Call the parent display to display the layout file
         parent::display($template);
+        $this->htmlview = $template;
     }
 
 }
