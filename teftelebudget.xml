@@ -9,13 +9,18 @@
     <copyright>>© Matchenkov M. J., 2021</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <!--  The version string is recorded in the components table -->
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <!-- The description is optional and defaults to the name -->
     <description>
         Teftele Smart Budget special designed to help people keep their money in order.
     </description>
     <namespace path="src/">Teftele\Component\Teftelebudget</namespace>
 
+    <files folder="site/">
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+    
     <administration>
         <!-- The link that will appear in the Admin panel's "Components" menu -->
         <menu link="index.php?option=com_teftelebudget">Teftele Budget!</menu>
