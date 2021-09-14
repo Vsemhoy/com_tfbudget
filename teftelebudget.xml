@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+ <name>Teftele Budget</name>
+    <!-- The following elements are optional and free of formatting constraints -->
+    <creationDate>September 2021</creationDate>
+    <!-- Dummy author, feel free to replace anywhere you see it-->
+    <author>Max Matchenkov</author>
+    <authorUrl>http://s332.ru</authorUrl>
+    <copyright>>© Matchenkov M. J., 2021</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <!--  The version string is recorded in the components table -->
+    <version>0.0.1</version>
+    <!-- The description is optional and defaults to the name -->
+    <description>
+        Teftele Smart Budget special designed to help people keep their money in order.
+    </description>
+    <namespace path="src/">Teftele\Component\Teftelebudget</namespace>
+
+    <administration>
+        <!-- The link that will appear in the Admin panel's "Components" menu -->
+        <menu link="index.php?option=com_teftelebudget">Teftele Budget!</menu>
+        <!-- List of files and folders to copy. Note the 'folder' attribute.
+             This is the name of the folder in your component package to copy FROM -->
+        <files folder="admin/">
+            <folder>services</folder>
+            <folder>src</folder>
+            <folder>tmpl</folder>
+        </files>
+    </administration>
+
+</extension>
